@@ -1,5 +1,5 @@
-Sources/
+app/Sources/
 */dist
 .vscode
-css/fonts.css
-css/vars.css
+app/css/fonts.css
+app/css/vars.css
