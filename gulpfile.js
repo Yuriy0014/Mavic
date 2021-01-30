@@ -56,6 +56,16 @@ function scripts() {
 		.pipe(browserSync.stream()); // Обновление сттраницы при изменении кода
 }
 
+function libs(){
+	return src([
+	  'node_modules/normalize.css/normalize.css',
+	  'node_modules/slick-carousel/slick/slick.css',
+	])
+	  .pipe(concat('libs.scss'))
+	  .pipe(dest('app/scss'))
+	  .pipe(browserSync.stream());
+  }
+
 function styles() {
 	return src('app/scss/style.scss')
 		.pipe(scss({ outputStyle: 'compressed' }))
@@ -101,6 +111,7 @@ exports.styles = styles;
 // [13:22:35] Using gulpfile I:\Projects\2021\Education\gulp-start\gulpfile.js
 // [13:22:35] Starting 'styles'...
 // [13:22:35] Finished 'styles' after 28 ms
+exports.libs = libs;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
@@ -109,4 +120,4 @@ exports.cleanDist = cleanDist;
 
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, watching, browsersync);
+exports.default = parallel(libs, styles, scripts, watching, browsersync);
