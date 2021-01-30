@@ -52,6 +52,7 @@ body {
 
 .container {
 	max-width: 1270px;  // На 30px больше чем на макете т.к. мы еще по бокам закинем паддинги 
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -62,6 +63,7 @@ body {
 	background-position: top center;
 	background-size: cover;
 	position: relative;
+	padding: 74px 0 50px;
 }
 
 .title {
@@ -69,5 +71,10 @@ body {
 }
 
 .scroll-btn {
-	
+	padding: 13px 0 30px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
