@@ -50,12 +50,18 @@ body {
 	color: #ffffff;
 }
 
+.container {
+	max-width: 1270px;  // На 30px больше чем на макете т.к. мы еще по бокам закинем паддинги 
+	margin: 0 auto;
+}
+
 .page-section {
 	min-height: 100vh;
-	background-image: url('../images/page_bg.jpg;');
+	background-image: url('../images/page_bg.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	position: relative;
 }
 
 .title {
@@ -63,5 +69,5 @@ body {
 }
 
 .scroll-btn {
-	 
+	
 }
