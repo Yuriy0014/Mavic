@@ -68,7 +68,11 @@ body {
 }
 
 .title {
-
+	@extend %sf-regular;
+	font-size: 44px;
+	line-height: 53px;
+	padding-left: 25px;
+	margin-bottom: 55px;
 }
 
 .scroll-btn {
