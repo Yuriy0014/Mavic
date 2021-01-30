@@ -3,3 +3,4 @@ app/Sources/
 .vscode
 app/css/fonts.css
 app/css/vars.css
+node_modules
