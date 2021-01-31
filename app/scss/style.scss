@@ -23,7 +23,7 @@
 		color: #fff;
 		background-color: transparent;
 		padding: 6px 28px;
-		border: 1px solid #fff ;
+		border: 1px solid #fff;
 		border-radius: 3px;
 		margin-right: 8px;
 		text-transform: uppercase;
@@ -42,6 +42,30 @@
 		& + .menu__list-item {
 			padding-left: 20px;
 		}
+	}
+}
+
+.top {
+	background-image: url("../images/top_bg.jpg");
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	&__title {
+		font-size: 96px;
+		line-height: 115px;
+		margin-bottom: 25px;
+		@extend %sf-semibold;
+	}
+	&__text {
+		margin: 25px 0 35px;
+		max-width: 325px;
+	}
+	&__social-item {
+		display: inline-block;
+		margin: 0 25px;
 	}
 }
 
