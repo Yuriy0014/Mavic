@@ -49,6 +49,7 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	color: #ffffff;
+	@extend %ubuntu-light
 }
 
 .container {
